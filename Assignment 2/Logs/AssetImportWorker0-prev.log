@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2022.3/staging' branch; Version is '2022.3.46f1 (8e9b8558c41a) revision 9345925'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'en' Physical Memory: 8079 MB
+OS: 'Windows 11  (10.0.22631) 64bit CoreSingleLanguage' Language: 'pt' Physical Memory: 16220 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -11,13 +11,13 @@ C:\Program Files\Unity\Hub\Editor\2022.3.46f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Unity'/COSC4426-Assignment-2-main/Assignment-Main
+C:/Projetos/COSC4426-Assignment-2/Assignment 2
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-64743
-Successfully changed project path to: C:/Unity'/COSC4426-Assignment-2-main/Assignment-Main
-C:/Unity'/COSC4426-Assignment-2-main/Assignment-Main
+63544
+Successfully changed project path to: C:/Projetos/COSC4426-Assignment-2/Assignment 2
+C:/Projetos/COSC4426-Assignment-2/Assignment 2
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -49,128 +49,141 @@ C:/Unity'/COSC4426-Assignment-2-main/Assignment-Main
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [12124]  Target information:
+Player connection [6192]  Target information:
 
-Player connection [12124]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 996878286 [EditorId] 996878286 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-M5TSE3B) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [6192]  * "[IP] 192.168.148.30 [Port] 0 [Flags] 2 [Guid] 3156988000 [EditorId] 3156988000 [Version] 1048832 [Id] WindowsEditor(7,DEKTOP-BJG) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [12124]  * "[IP] 192.168.2.218 [Port] 0 [Flags] 2 [Guid] 996878286 [EditorId] 996878286 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-M5TSE3B) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
-
-Player connection [12124] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [12124] Host joined alternative multi-casting on [225.0.0.222:34997]...
-[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
-Refreshing native plugins compatible for Editor in 154.47 ms, found 3 plugins.
+Player connection [6192] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [6192] Host joined alternative multi-casting on [225.0.0.222:34997]...
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+Refreshing native plugins compatible for Editor in 33.37 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.46f1 (8e9b8558c41a)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.46f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Unity'/COSC4426-Assignment-2-main/Assignment-Main/Assets
+[Subsystems] Discovering subsystems at path C:/Projetos/COSC4426-Assignment-2/Assignment 2/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: Intel(R) HD Graphics 5500 (ID=0x1616)
-    Vendor:   Intel
-    VRAM:     4039 MB
-    Driver:   20.19.15.4835
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f15)
+    Vendor:   NVIDIA
+    VRAM:     5980 MB
+    Driver:   30.0.15.1289
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.46f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.46f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.46f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56628
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56420
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.46f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.46f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.46f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.138414 seconds.
-- Loaded All Assemblies, in  5.161 seconds
+Registered in 0.017632 seconds.
+- Loaded All Assemblies, in  0.685 seconds
 Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
+Native extension for Android target not found
+InvalidOperationException: Cannot start process because a file name has not been provided.
+  at System.Diagnostics.Process.Start () [0x00024] in <09af50eda9a647268d2c4fcdf7fac506>:0 
+  at (wrapper remoting-invoke-with-check) System.Diagnostics.Process.Start()
+  at UnityEditor.Android.ProgramAsShellExecute.Start (System.Diagnostics.ProcessStartInfo psi) [0x0000e] in <2ef16115290e43d1b0a841ac7b4ec3eb>:0 
+  at UnityEditor.Android.Command.RunWithShellExecute (System.String command, System.String args, System.String workingdir, System.String errorMsg) [0x0003e] in <2ef16115290e43d1b0a841ac7b4ec3eb>:0 
+  at UnityEditor.Android.ADB.StartServer () [0x00013] in <2ef16115290e43d1b0a841ac7b4ec3eb>:0 
+  at UnityEditor.Android.ADB.Run (System.String[] command, UnityEditor.Android.Command+WaitingForProcessToExit waitingForProcessToExit, System.String errorMsg) [0x0000b] in <2ef16115290e43d1b0a841ac7b4ec3eb>:0 
+  at UnityEditor.Android.AndroidDeploymentTargetsExtension.GetKnownTargets (UnityEditor.DeploymentTargets.IDeploymentTargetsMainThreadContext context, UnityEditor.ProgressHandler progressHandler) [0x002ae] in <2ef16115290e43d1b0a841ac7b4ec3eb>:0 
+  at UnityEditor.Android.TargetScanWorker.ScanSync () [0x00049] in <2ef16115290e43d1b0a841ac7b4ec3eb>:0 
+  at UnityEditor.Android.TargetExtension.OnUsbDevicesChanged (UnityEditor.Hardware.UsbDevice[] usbDevices) [0x00087] in <2ef16115290e43d1b0a841ac7b4ec3eb>:0 
+  at UnityEditor.Android.TargetExtension.OnLoad () [0x000b4] in <2ef16115290e43d1b0a841ac7b4ec3eb>:0 
+  at UnityEditor.Modules.ModuleManager.InitializePlatformSupportModules () [0x0009d] in <e0a2c8363ef54a6393fed120beebdb7a>:0 
+
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  5.810 seconds
-Domain Reload Profiling: 10944ms
-	BeginReloadAssembly (1710ms)
+- Finished resetting the current domain, in  0.619 seconds
+Domain Reload Profiling: 1301ms
+	BeginReloadAssembly (194ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (13ms)
-	RebuildCommonClasses (477ms)
-	RebuildNativeTypeToScriptingClass (144ms)
-	initialDomainReloadingComplete (721ms)
-	LoadAllAssembliesAndSetupDomain (2078ms)
-		LoadAssemblies (1677ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (66ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (111ms)
+	LoadAllAssembliesAndSetupDomain (291ms)
+		LoadAssemblies (193ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (2057ms)
-			TypeCache.Refresh (2041ms)
-				TypeCache.ScanAssembly (1853ms)
-			ScanForSourceGeneratedMonoScriptInfo (2ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (5814ms)
+		AnalyzeDomain (285ms)
+			TypeCache.Refresh (283ms)
+				TypeCache.ScanAssembly (258ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (620ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (5042ms)
+		SetupLoadedEditorAssemblies (526ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (147ms)
-			SetLoadedEditorAssemblies (97ms)
+			InitializePlatformSupportModulesInManaged (200ms)
+			SetLoadedEditorAssemblies (9ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (29ms)
-			ProcessInitializeOnLoadAttributes (3556ms)
-			ProcessInitializeOnLoadMethodAttributes (1213ms)
+			BeforeProcessingInitializeOnLoad (4ms)
+			ProcessInitializeOnLoadAttributes (222ms)
+			ProcessInitializeOnLoadMethodAttributes (90ms)
 			AfterProcessingInitializeOnLoad (0ms)
-			EditorAssembliesLoaded (1ms)
+			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
 ========================================================================
 Worker process is ready to serve import requests
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  9.979 seconds
+- Loaded All Assemblies, in  1.176 seconds
 Native extension for WindowsStandalone target not found
+Native extension for Android target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  8.352 seconds
-Domain Reload Profiling: 18293ms
-	BeginReloadAssembly (3280ms)
+- Finished resetting the current domain, in  1.589 seconds
+Domain Reload Profiling: 2760ms
+	BeginReloadAssembly (278ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (79ms)
+		DisableScriptedObjects (18ms)
 		BackupInstance (0ms)
-		ReleaseScriptingObjects (1ms)
-		CreateAndSetChildDomain (345ms)
-	RebuildCommonClasses (486ms)
-	RebuildNativeTypeToScriptingClass (180ms)
-	initialDomainReloadingComplete (554ms)
-	LoadAllAssembliesAndSetupDomain (5437ms)
-		LoadAssemblies (5107ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (37ms)
+	RebuildCommonClasses (55ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (70ms)
+	LoadAllAssembliesAndSetupDomain (748ms)
+		LoadAssemblies (589ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (2595ms)
-			TypeCache.Refresh (2345ms)
-				TypeCache.ScanAssembly (2207ms)
-			ScanForSourceGeneratedMonoScriptInfo (174ms)
-			ResolveRequiredComponents (65ms)
-	FinalizeReload (8355ms)
+		AnalyzeDomain (316ms)
+			TypeCache.Refresh (282ms)
+				TypeCache.ScanAssembly (258ms)
+			ScanForSourceGeneratedMonoScriptInfo (22ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (1590ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (6408ms)
+		SetupLoadedEditorAssemblies (1336ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (256ms)
-			SetLoadedEditorAssemblies (82ms)
+			InitializePlatformSupportModulesInManaged (37ms)
+			SetLoadedEditorAssemblies (10ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (1109ms)
-			ProcessInitializeOnLoadAttributes (4668ms)
-			ProcessInitializeOnLoadMethodAttributes (206ms)
-			AfterProcessingInitializeOnLoad (86ms)
-			EditorAssembliesLoaded (1ms)
+			BeforeProcessingInitializeOnLoad (175ms)
+			ProcessInitializeOnLoadAttributes (1064ms)
+			ProcessInitializeOnLoadMethodAttributes (36ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (74ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.47 seconds
-Refreshing native plugins compatible for Editor in 101.73 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (9ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 7.15 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3090 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 19 unused Assets / (54.5 KB). Loaded Objects now: 3556.
-Memory consumption went from 117.8 MB to 117.7 MB.
-Total: 32.569300 ms (FindLiveObjects: 1.246800 ms CreateObjectMapping: 0.880500 ms MarkObjects: 29.407000 ms  DeleteObjects: 1.029900 ms)
+Unloading 19 unused Assets / (54.5 KB). Loaded Objects now: 3558.
+Memory consumption went from 118.5 MB to 118.4 MB.
+Total: 4.813900 ms (FindLiveObjects: 0.315500 ms CreateObjectMapping: 0.284100 ms MarkObjects: 4.056500 ms  DeleteObjects: 0.156400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -187,411 +200,44 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 675471.740535 seconds.
-  path: Assets/BG_Music.mixer
-  artifactKey: Guid(d5d374f92cbd02b4ab38c6c7e4ac9ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BG_Music.mixer using Guid(d5d374f92cbd02b4ab38c6c7e4ac9ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
-Refreshing native plugins compatible for Editor in 53.76 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
- -> (artifact id: '4227fc1c925c6a53b34d7fa256375861') in 0.244926 seconds
+  Time since last request: 83431.058255 seconds.
+  path: Assets/Bouncy Ball.physicMaterial
+  artifactKey: Guid(9eae2d6b4276ce743b89c93751484f74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bouncy Ball.physicMaterial using Guid(9eae2d6b4276ce743b89c93751484f74) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '7be26c1de5e83fa4c181d29923db1d16') in 0.016150 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 6
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 1437.720246 seconds.
-  path: Assets/Casual Game Sounds U6
-  artifactKey: Guid(6bceb1541a2dea5489e17692140e9103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Casual Game Sounds U6 using Guid(6bceb1541a2dea5489e17692140e9103) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
- -> (artifact id: 'b985846e187cabcdabec5b42da9ff64c') in 0.009621 seconds
+  Time since last request: 0.000029 seconds.
+  path: Assets/basketball hoop.blend
+  artifactKey: Guid(3f116f6f767b9b442976167efe5af823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/basketball hoop.blend using Guid(3f116f6f767b9b442976167efe5af823) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '37ae0569d04086d7f9373eafb3c0e648') in 0.510380 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.187597 seconds.
-  path: Assets/Casual Game Sounds U6/CasualGameSounds
-  artifactKey: Guid(fc408c908afdc4a7c9213c3bb144bbb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Casual Game Sounds U6/CasualGameSounds using Guid(fc408c908afdc4a7c9213c3bb144bbb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
- -> (artifact id: '3c19e905d14decc4d55a62cee7b5ebb0') in 0.023712 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.112083 seconds.
-  path: Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-01.wav
-  artifactKey: Guid(32d4b1811dda14a6cb9e059ee8ad17d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-01.wav using Guid(32d4b1811dda14a6cb9e059ee8ad17d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
- -> (artifact id: 'eeffb4acde0e3f27c649ef0a98c5ca3a') in 4.517795 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000131 seconds.
-  path: Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-18.wav
-  artifactKey: Guid(2667a0a008b044e218b63df62e2be749) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-18.wav using Guid(2667a0a008b044e218b63df62e2be749) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
- -> (artifact id: 'a4424871b8381b68c105a66153a6bd7e') in 0.539093 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000785 seconds.
-  path: Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-22.wav
-  artifactKey: Guid(d8d04c6f80a1140db85ede568dab1f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-22.wav using Guid(d8d04c6f80a1140db85ede568dab1f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
- -> (artifact id: '1991e1a373cadc8fffa0aaa01784ccbc') in 0.147815 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000108 seconds.
-  path: Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-16.wav
-  artifactKey: Guid(724131bc8a7f34041bb9f1701f0cb58d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-16.wav using Guid(724131bc8a7f34041bb9f1701f0cb58d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
- -> (artifact id: '168e80cef19af432ffde51e92ea9242d') in 0.194085 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000683 seconds.
-  path: Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-12.wav
-  artifactKey: Guid(7478151cf36724a7dada558f746c3633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-12.wav using Guid(7478151cf36724a7dada558f746c3633) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
- -> (artifact id: '97209ae195e66a0f8b307f5a21394a19') in 0.216031 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.009590 seconds.
-  path: Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-11.wav
-  artifactKey: Guid(a0010a1a0c474473b81729eb770c485f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-11.wav using Guid(a0010a1a0c474473b81729eb770c485f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
- -> (artifact id: '931a976623ece0ec81943f38b2dca653') in 0.451690 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.011087 seconds.
-  path: Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-25.wav
-  artifactKey: Guid(5fdb13d3756c84fecac96f5a2d124370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-25.wav using Guid(5fdb13d3756c84fecac96f5a2d124370) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
- -> (artifact id: '5fac9c6c4a8f67c6251424402809aa01') in 0.384574 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.012122 seconds.
-  path: Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-10.wav
-  artifactKey: Guid(cabfae866cab347928b74b7d0ca6bfa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-10.wav using Guid(cabfae866cab347928b74b7d0ca6bfa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
- -> (artifact id: '300abb8a7796c41b4a71279d7e303806') in 0.307104 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.001254 seconds.
-  path: Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-15.wav
-  artifactKey: Guid(0c008ee3ee72a4362a35be25fa5de043) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-15.wav using Guid(0c008ee3ee72a4362a35be25fa5de043) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
- -> (artifact id: '119f27b612ece725225301054b6a0797') in 0.228192 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.005669 seconds.
-  path: Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-07.wav
-  artifactKey: Guid(2c5292ba5cf254919a6b9e2b18e04f49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-07.wav using Guid(2c5292ba5cf254919a6b9e2b18e04f49) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
- -> (artifact id: '6bfdda4a35611dd7e6b97ac34b63a7cd') in 0.241479 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.001209 seconds.
-  path: Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-08.wav
-  artifactKey: Guid(4e1ff8faed12a475eba9be0e46072269) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-08.wav using Guid(4e1ff8faed12a475eba9be0e46072269) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
- -> (artifact id: '3f02c71c265019125241d032725080dc') in 0.323388 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.002315 seconds.
-  path: Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-05.wav
-  artifactKey: Guid(b99da9a57308d4ba1bee1cf1d9038376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-05.wav using Guid(b99da9a57308d4ba1bee1cf1d9038376) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
- -> (artifact id: 'dd7f6dd32dd5bc4df83a10547af6984e') in 0.346724 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.005163 seconds.
-  path: Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-31.wav
-  artifactKey: Guid(cf6c0e7fbef9449c98a0cdb5ea0c4d9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-31.wav using Guid(cf6c0e7fbef9449c98a0cdb5ea0c4d9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
- -> (artifact id: '10911722e20f1bdc4c7fcb4b0cdc44ae') in 0.208167 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.002795 seconds.
-  path: Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-13.wav
-  artifactKey: Guid(72127805eb2bc4e7fbf2e02eca266cfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-13.wav using Guid(72127805eb2bc4e7fbf2e02eca266cfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
- -> (artifact id: '7f66618010c713ee35cda78342d448d1') in 0.593546 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.001152 seconds.
-  path: Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-21.wav
-  artifactKey: Guid(ffb159a21c8a04135a5616979c828fab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-21.wav using Guid(ffb159a21c8a04135a5616979c828fab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
- -> (artifact id: '76914a0af3a5bb09a8c1d5db730f795e') in 1.700388 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.038587 seconds.
-  path: Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-28.wav
-  artifactKey: Guid(79180f511d89441b9aa23ccae1992fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-28.wav using Guid(79180f511d89441b9aa23ccae1992fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
- -> (artifact id: '4a4bba69512194a13f8a1944d2ea8996') in 1.221987 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.019488 seconds.
-  path: Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-27.wav
-  artifactKey: Guid(5039414d94a6e4e70a5ab9e8833e992a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-27.wav using Guid(5039414d94a6e4e70a5ab9e8833e992a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
- -> (artifact id: 'ec2dfcb4bb4492e6ce84b58ca79821df') in 0.395537 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 33.408316 seconds.
-  path: Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-32.wav
-  artifactKey: Guid(29bde6326b4c34ad8a12da475f79b50a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-32.wav using Guid(29bde6326b4c34ad8a12da475f79b50a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
- -> (artifact id: 'a94c49838a1124b9e4efc275aee2dbaa') in 0.333625 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000095 seconds.
-  path: Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-38.wav
-  artifactKey: Guid(84e427d6b66ab4066b6a4dcd0ce819ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-38.wav using Guid(84e427d6b66ab4066b6a4dcd0ce819ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
- -> (artifact id: 'ffb31609fb5b07008076ed275f0211d7') in 0.533338 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000506 seconds.
-  path: Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-35.wav
-  artifactKey: Guid(89e6bc608da7b47d4914f3d9c2484e48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-35.wav using Guid(89e6bc608da7b47d4914f3d9c2484e48) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
- -> (artifact id: 'b3d6e0bee63d73f288d621831711d2dc') in 0.539420 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.003629 seconds.
-  path: Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-40.wav
-  artifactKey: Guid(0994c12e202f342459a4212e7287f7e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-40.wav using Guid(0994c12e202f342459a4212e7287f7e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
- -> (artifact id: 'faa44929d3a139bc30881a2a417258ea') in 0.318503 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000159 seconds.
-  path: Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-37.wav
-  artifactKey: Guid(a931da70ee74947d5a047de583170ade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-37.wav using Guid(a931da70ee74947d5a047de583170ade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
- -> (artifact id: '37a99d7872c7f7cc69ff5ebed50ecc5b') in 0.349946 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 48.353446 seconds.
-  path: Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-42.wav
-  artifactKey: Guid(38a17a92b9d9748c6a1e67972041b833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-42.wav using Guid(38a17a92b9d9748c6a1e67972041b833) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
- -> (artifact id: '50264ea3d9b2732e7fb227f73c9730cf') in 3.388663 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.045975 seconds.
-  path: Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-47.wav
-  artifactKey: Guid(d46323e22e74e46baa241cbf48c85671) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-47.wav using Guid(d46323e22e74e46baa241cbf48c85671) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
- -> (artifact id: 'e501ecaa9c51c73fc466f368dd6642d7') in 0.768271 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.002145 seconds.
-  path: Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-46.wav
-  artifactKey: Guid(fe0b1f9aeb45b41b089175aeeabd5d95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-46.wav using Guid(fe0b1f9aeb45b41b089175aeeabd5d95) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
- -> (artifact id: 'd1cd5cd0c6192a3655ee208420351da4') in 0.464363 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.001204 seconds.
-  path: Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-49.wav
-  artifactKey: Guid(7bef0064f8567430cac22499c6b93d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-49.wav using Guid(7bef0064f8567430cac22499c6b93d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
- -> (artifact id: 'c23e6b811be9f6ecaddb83d1ae18789b') in 0.662543 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.050812 seconds.
-  path: Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-50.wav
-  artifactKey: Guid(79e6baad2fd414b82a6d49ce1568d2e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-50.wav using Guid(79e6baad2fd414b82a6d49ce1568d2e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
- -> (artifact id: 'b9473a8b3197a79666d55e5afa157e65') in 0.443326 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Prepare
-Caller must complete domain reload
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in 31.934 seconds
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in 26.006 seconds
-Domain Reload Profiling: 57894ms
-	BeginReloadAssembly (6179ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (573ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (2413ms)
-	RebuildCommonClasses (452ms)
-	RebuildNativeTypeToScriptingClass (242ms)
-	initialDomainReloadingComplete (608ms)
-	LoadAllAssembliesAndSetupDomain (24405ms)
-		LoadAssemblies (25762ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (275ms)
-			TypeCache.Refresh (91ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (1ms)
-			ResolveRequiredComponents (164ms)
-	FinalizeReload (26008ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (7179ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (418ms)
-			SetLoadedEditorAssemblies (232ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (1029ms)
-			ProcessInitializeOnLoadAttributes (5230ms)
-			ProcessInitializeOnLoadMethodAttributes (162ms)
-			AfterProcessingInitializeOnLoad (106ms)
-			EditorAssembliesLoaded (2ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (139ms)
-Refreshing native plugins compatible for Editor in 478.36 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3082 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 14 unused Assets / (28.5 KB). Loaded Objects now: 3569.
-Memory consumption went from 120.5 MB to 120.5 MB.
-Total: 26.576500 ms (FindLiveObjects: 1.170100 ms CreateObjectMapping: 0.793300 ms MarkObjects: 24.018000 ms  DeleteObjects: 0.588800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Caller must complete domain reload
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  9.639 seconds
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in 10.511 seconds
-Domain Reload Profiling: 20097ms
-	BeginReloadAssembly (2232ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (78ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (341ms)
-	RebuildCommonClasses (602ms)
-	RebuildNativeTypeToScriptingClass (244ms)
-	initialDomainReloadingComplete (506ms)
-	LoadAllAssembliesAndSetupDomain (5999ms)
-		LoadAssemblies (7325ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (115ms)
-			TypeCache.Refresh (38ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (1ms)
-			ResolveRequiredComponents (68ms)
-	FinalizeReload (10514ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (4818ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (74ms)
-			SetLoadedEditorAssemblies (21ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (529ms)
-			ProcessInitializeOnLoadAttributes (3758ms)
-			ProcessInitializeOnLoadMethodAttributes (290ms)
-			AfterProcessingInitializeOnLoad (145ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (60ms)
+Number of asset objects unloaded after import = 58
