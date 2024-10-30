@@ -353,6 +353,9 @@
 -analyzer:"B:/Program Files/Unity 2022.3.46f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"B:/Program Files/Unity 2022.3.46f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 "Assets/AudioManager.cs"
 =======
 >>>>>>> Stashed changes
