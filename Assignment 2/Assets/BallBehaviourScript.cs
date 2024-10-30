@@ -4,89 +4,32 @@ using UnityEngine;
 
 public class BallBehaviourScript : MonoBehaviour
 {
-    public Rigidbody basketball;  // Assign the basketball Rigidbody in the inspector
-    public Transform hoopTarget;  // Assign the hoop's position
+    private Rigidbody basketballRb;
+    private bool isShot = false;
+    public Transform hoopTarget;  //reference to hoop
+    public float horizontalForce = 9f;
+    public float verticalForce = 15f;
     
-    [Header("------Audio Source------")]
-    [SerializeField] AudioSource ThrowBallSource;
-
-    [Header("------Audio Clip------")]
-    public AudioClip ThrowBallClip;  
-
-    // Variables
-    public float deltaTime = 0;
-
-    //Audio
-    [Header("------Audio Source------")]
-    [SerializeField] AudioSource musicSource;
-    [SerializeField] AudioSource musicSource2;
-
-    [Header("------Audio Clip------")]
-    public AudioClip throwSound;
-    public AudioClip Goal;
-
-    // Flag to check if throw sound has played
-    private bool hasPlayedThrowSound = false;
-
- 
-    // Start is called before the first frame update
     void Start()
     {
-        
+        basketballRb = GetComponent<Rigidbody>();
+        basketballRb.isKinematic = true;
     }
-
-    // Update is called once per frame
     void Update()
     {
-        ThrowBall();
-    }
-
-<<<<<<< Updated upstream
-    void ThrowBall()
-    {
-        // Use ThrowBallSource instead of musicSource
-        ThrowBallSource.clip = ThrowBallClip; 
-        ThrowBallSource.Play();
-        
-=======
-    void ThrowBall() {
-
-       
-
->>>>>>> Stashed changes
-        deltaTime += Time.deltaTime;
-        float duration = 0.9f;
-        float t01 = deltaTime / duration;
-
-        // Move to target
-        Vector3 A = basketball.position;
-        Vector3 B = hoopTarget.position;
-        Vector3 pos = Vector3.Lerp(A, B, t01);
-
-        // Move in arc
-        Vector3 arc = Vector3.up * 5 * Mathf.Sin(t01 * 3.14f);
-
-        basketball.position = pos + arc;
-       
-         // Play throwSound only once when the ball is first thrown
-        if (!hasPlayedThrowSound)
+        if (Input.GetKeyDown(KeyCode.Space) && !isShot)  //spacebar to shoot ball
         {
-            musicSource.clip = throwSound;
-            musicSource.Play();
-            hasPlayedThrowSound = true;  // Set the flag to true to prevent replaying
+            isShot = true;
+            ShootBall();
         }
-	
-
-        // Moment when ball arrives at the target
-        if (t01 >= 1) {
-<<<<<<< Updated upstream
-=======
-	    musicSource2.clip = Goal;
-            musicSource2.Play();
-
-            isBallFlying = false;
->>>>>>> Stashed changes
-            basketball.GetComponent<Rigidbody>().isKinematic = false;
-        }
+    }
+    void ShootBall()
+    {
+        basketballRb.isKinematic = false;  //enables physics
+        Vector3 direction = (hoopTarget.position - transform.position).normalized;  //direction points to hoop
+        Vector3 horizontalDirection = new Vector3(direction.x, 0, direction.z);     //horizontal direction towards hoop
+        Vector3 verticalDirection = Vector3.up;     //vertical direction (upward)
+        basketballRb.AddForce(horizontalDirection * horizontalForce, ForceMode.Impulse);    //impulse force - applied once
+        basketballRb.AddForce(verticalDirection * verticalForce, ForceMode.Impulse);        //impulse force - applied once
     }
 }

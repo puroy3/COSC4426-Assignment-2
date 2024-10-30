@@ -1,9 +1,1 @@
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-C:\Unity'\COSC4426-Assignment-2-main\Assignment 2
-=======
-B:\COSC4426 Assignment 2\COSC4426-Assignment-2\Assignment 2
->>>>>>> Stashed changes
-=======
-B:\COSC4426-Assignment-2-sharoz\COSC4426-Assignment-2\Assignment 2
->>>>>>> Stashed changes
+C:\Users\Ha\Desktop\MyGithub\COSC4426-Assignment-2\Assignment 2
