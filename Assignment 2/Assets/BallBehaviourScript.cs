@@ -4,44 +4,32 @@ using UnityEngine;
 
 public class BallBehaviourScript : MonoBehaviour
 {
-    public Transform basketball;
-    public Transform hoopTarget;
-    public float deltaTime = 0;
-    public bool isBallFlying = true;
-
-    // Start is called before the first frame update
+    private Rigidbody basketballRb;
+    private bool isShot = false;
+    public Transform hoopTarget;  //reference to hoop
+    public float horizontalForce = 9f;
+    public float verticalForce = 15f;
+    
     void Start()
     {
-        
+        basketballRb = GetComponent<Rigidbody>();
+        basketballRb.isKinematic = true;
     }
-
-    // Update is called once per frame
     void Update()
     {
-        if(isBallFlying)
-            ThrowBall();
-    }
-
-    void ThrowBall() {
-        deltaTime += Time.deltaTime;
-        float duration = 0.9f;
-        float t01 = deltaTime / duration;
-
-        // move target A to B
-        Vector3 A = basketball.position;
-        Vector3 B = hoopTarget.position;
-        Vector3 pos = Vector3.Lerp(A, B, t01);
-
-        // move in arc
-        Vector3 arc = Vector3.up * 1 * Mathf.Sin(t01 * 3.14f);
-        
-        basketball.position = pos + arc;
-
-        // moment when ball arrives at the target
-        if (t01 >= 1) {
-            isBallFlying = false;
-            basketball.GetComponent<Rigidbody>().isKinematic = false;
+        if (Input.GetKeyDown(KeyCode.Space) && !isShot)  //spacebar to shoot ball
+        {
+            isShot = true;
+            ShootBall();
         }
     }
-
+    void ShootBall()
+    {
+        basketballRb.isKinematic = false;  //enables physics
+        Vector3 direction = (hoopTarget.position - transform.position).normalized;  //direction points to hoop
+        Vector3 horizontalDirection = new Vector3(direction.x, 0, direction.z);     //horizontal direction towards hoop
+        Vector3 verticalDirection = Vector3.up;     //vertical direction (upward)
+        basketballRb.AddForce(horizontalDirection * horizontalForce, ForceMode.Impulse);    //impulse force - applied once
+        basketballRb.AddForce(verticalDirection * verticalForce, ForceMode.Impulse);        //impulse force - applied once
+    }
 }
