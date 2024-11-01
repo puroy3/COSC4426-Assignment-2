@@ -1,4 +1,0 @@
-repository "Assignment 2@XmenEvolution@cloud"
-  path "/"
-    br "/main"
-    co "/main"
